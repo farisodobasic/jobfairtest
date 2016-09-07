@@ -1,0 +1,3187 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,latin-ext);
+
+@import url(https://fonts.googleapis.com/css?family=Domine:400,700&subset=latin,latin-ext);
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+body{
+    background-color: #D9D9D9;
+    margin:auto;
+}
+
+#screen{
+
+    color: #909191;
+    background-color: #FFFFFF;
+/*    position:absolute;*/
+/*    min-height: 100%;*/
+/*    z-index:15;*/
+/*    left:50%;*/
+/*    margin:0px 0 0 -600px;*/
+/*    padding-bottom: 380px;*/
+}
+.navbar-default{
+  background:#fefefe!important;
+}
+/*   NERMIN LOGO */
+
+        .login-big{
+            margin: auto;
+            width: 100%;
+            height: 620px;
+            margin-top: 30px;
+
+        }
+
+        .registruj-se{
+            width: 100%;
+            height:40px;
+
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            margin:0 auto;
+            background:#D92528;
+            margin-bottom: 50px;
+            color:#fff;
+        }
+
+        .registruj-se:hover{
+            cursor: pointer;
+            text-decoration: none;
+            color:#fff;
+            opacity: 0.7;
+        }
+
+        .login{
+            margin: auto;
+            width: 450px;
+            height: 275px;
+            background-color: #FFFFFF;
+            border-radius: 2%;
+            border-color: #D9D9D9;
+            border-style: solid;
+            border-width: 1px;
+            margin-bottom: 25px;
+        }
+
+        .sub-login{
+            width: 450px;
+            height: 90px;
+            float: right;
+            text-align: right;
+            margin-right: 27px;
+            padding-bottom: 25px;
+        }
+
+        .input-login-u, .input-login-u1, .input-login-p{
+            width: 400px;
+
+            margin-left: 25px;
+            border-radius: 5px;
+            border-color: #D9D9D9;
+            border-style: solid;
+            text-align: left;
+            border-width: 1px;
+            margin-bottom: 1px;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            padding:10px;
+        }
+
+        .input-login-u1{
+            font-size: 12px;
+            text-align: left;
+            color: #646566;
+        }
+
+        .input-login-u:focus, .input-login-p:focus{
+            outline: none;
+        }
+
+        .input-slika-login{
+            margin-left: 25px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            width: 90px;
+            height: auto;
+        }
+
+        #login-logo{
+            margin: auto;
+            width: 193px;
+            height: auto;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .login-btn{
+            font-size: 14px;
+            border-style: none;
+            height: 35px;
+            background-color: #D92528;
+            padding-left: 4%;
+            padding-right: 4%;
+            color: white;
+            margin-right: -2px;
+            margin-left: 17px;
+        }
+@media(max-width:470px)
+{
+    .login
+    {
+        width:100%;
+        padding: 7px;
+    }
+
+     #text{
+        text-align: left!important;
+     }
+
+    .cv-partner-item{
+        width: 100%!important;
+        height: 200px!important;
+    }
+
+    .cv-partner-item .ikonica-img{
+        width:60px!important;
+    }
+
+    .login .input-login-u, .login .input-login-p, .input-login-u1
+    {
+        width:100%;
+        margin-left: 0px;
+    }
+
+    .login-big
+    {
+        padding:10px;
+    }
+
+    .sub-login
+    {
+        width:100%;
+    }
+}
+
+
+/*End of Nermin CSS Login Student*/
+
+/*ooestecu css - Tarik*/
+
+
+    .header {
+        background-color: #C91619;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 70px;
+        padding-right: -70px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        font-size: 180%;
+        width: 100%;
+        margin-top: 95px;
+    }
+
+    #text {
+        font-family: 'Roboto', sans-serif;
+        width: 80%;
+        margin: auto;
+        color: #909191;
+        font-size: 100%;
+        font-weight: 400;
+        text-align: justify;
+        padding-bottom: 30px;
+    }
+
+    #slika {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+@media(max-width:480px)
+{
+     .header {
+        margin-top: 75px;
+         padding-bottom: 30px;
+    }
+
+     #text{
+        text-align: left!important;
+     }
+    .cv-partner-item{
+        width: 100%!important;
+        height: 200px!important;
+    }
+
+    .cv-partner-item .ikonica-img{
+        width:60px!important;
+    }
+}
+/*... end of oeestecu ...*/
+
+
+/*... footer css ...*/
+div.logo a {
+    text-decoration:none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    display:inline-block;
+}
+
+#footer {
+/*    position: absolute;*/
+/*    bottom: 0;*/
+    padding-top: 40px;
+    margin: auto;
+/*    max-width: 1200px;*/
+    width: 100%;
+    padding-bottom:20px;
+    background-color: #363738;
+}
+
+.icons ul li{
+    display: inline-block;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+}
+.icons {
+    width: 300px;
+    margin: auto;
+}
+
+.linkovi-footer{
+    margin-right: 4%;
+}
+.linkovi-footer:last-child{
+    margin-right: 0;
+}
+.linkovi-footer:hover{
+    opacity: 0.4;
+}
+
+.ikona-foot:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.pratite{
+    color: white;
+    text-align: center;
+}
+
+.foot-link{
+    text-align: center;
+}
+
+.foot-link ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 3%;
+}
+
+.foot-link ul:last-child{
+    margin-right: 0;
+}
+
+@media(max-width : 800px )
+{
+
+    .foot-link{
+    }
+    div.logo a {
+        font-size: 0%;
+    }
+    #footer{
+/*        height: 240px;*/
+        font-size: 80%;
+    }
+
+    .cv-partner-item{
+        width: 100%!important;
+        height: 200px!important;
+    }
+
+    .cv-partner-item .ikonica-img{
+        width:60px!important;
+    }
+
+    .icons {
+    width: 200px;
+    margin: auto;
+}
+
+}
+/* end of footer*/
+
+/*Nermin contactform*/
+        #contact-body{
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            line-height: 100%;
+        }
+        .contact{
+            height: 19%;
+            background-color: #C91619;
+            color: white;
+            padding-left: 5%;
+            vertical-align: center;
+        }
+        .forma{
+            margin-top: 90px;
+            margin-left: 140px;
+            margin-right: 120px;
+            width: 500px;
+            height: 300px;
+            font-family: 'Roboto', sans-serif;
+            color: #646566;
+            float: left;
+        }
+
+        .form-box{
+            font-size: 15px;
+            width: 520px;
+            height: 30px;
+        }
+
+        .form-text{
+            font-family: 'Roboto', sans-serif;
+            width: 520px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .form-btn{
+            margin-left: 120px;
+            width: 150px;
+            float: right;
+        }
+
+        .division{
+/*            float: right;*/
+            display: inline-block;
+            padding-top: 5%;
+/*            margin-right: 160px;*/
+            padding-bottom: 5%;
+        }
+        .contact_name_mail{
+            width: 400px;
+            height: 25px;
+            margin-bottom: 5px;
+            border-radius: 8%;
+            border-color: #D9D9D9;
+            border-style: solid;
+            border-width: 1px;
+            float: right;
+        }
+        #contact-message{
+            width: 400px;
+            height: 100px;
+            margin-bottom: 5%;
+            border-radius: 4%;
+            border-color: #D9D9D9;
+            border-style: solid;
+            border-width: 1px;
+            float: right;
+            min-height: 200px;
+            max-height: 200px;
+        }
+        p.name{
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            margin-bottom: 0;
+            margin-top: 20px;
+            color: #646566;
+        }
+        p.pozicija{
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 12px;
+            margin: 0;
+            color: #646566;
+        }
+        p.broj_mail{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            color: #C91619;
+            margin: 0;
+        }
+        .sendmailbutton{
+            text-align: center;
+            background-color: #C91619;
+            color: white;
+            font-size: 15px;
+            border-style: none;
+            height: 33px;
+            padding: 1%;
+            width: 110px;
+            float: right;
+            margin-right: -20px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+
+@media(max-width:1100px)
+{
+    .forma
+    {
+        margin-top:50px;
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bord_names
+    {
+        float:left;
+        width:300px;
+        margin: auto;
+    }
+
+    .all-contacts
+    {
+        height:300px;
+        width:600px;
+        margin:auto;
+    }
+
+    .division
+    {
+        width:100%;
+        margin:auto;
+        float:none;
+    }
+
+}
+
+@media(max-width:650px)
+{
+    .all-contacts
+    {
+        width:300px;
+    }
+
+   .bord_names
+    {
+        float:left;
+        width:300px;
+        margin: auto;
+    }
+
+     #text{
+        text-align: left!important;
+     }
+}
+
+@media(max-width:550px)
+{
+    .form-box .input-login-u
+    {
+        width:100%;
+    }
+
+    #contact-message
+    {
+        width:100%;
+    }
+
+    .forma
+    {
+        width:100%;
+        padding:10px;
+    }
+
+    .form-box, .form-text
+    {
+        width:100%;
+    }
+
+     #text{
+        text-align: left!important;
+     }
+}
+
+@media(max-width:410px)
+{
+   .all-contacts
+    {
+        width:200px;
+    }
+
+   .bord_names
+    {
+        float:left;
+        width:200px;
+        margin: auto;
+    }
+
+     #text{
+        text-align: left!important;
+     }
+}
+
+/*end of contactform*/
+
+
+/*Menu*/
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+}
+
+@media(max-width:1200px)
+{
+    #menu
+    {
+        width:100%;
+
+    }
+}
+
+.top{
+    bottom: 2em;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    opacity:0.7;
+    padding: 1.2em;
+    position: fixed;
+    right: 1.5em;
+    text-decoration: none;
+    width: 5px;
+    height: 5px;
+}
+
+.top:hover {
+    opacity: 1;
+    transition: 1s;
+    font-family: 'Roboto', sans-serif;
+    border: 3px solid #696969;
+    background-color: #505050;
+    border-radius: 5px;
+    width: 5px;
+    height: 5px;
+}
+
+.top img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    right: 15px;
+    bottom: 15px;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+/*menu the end*/
+
+/* Prikaz kompanija*/
+.company
+{
+    margin: auto;
+}
+#info_company
+{
+            width: 660px;
+            height: 330px;
+            background-color: #ffffff;
+            margin-left: 30px;
+            margin-top: 50px;
+}
+
+#about_company
+{
+            width: 660px;
+            height: 700px;
+            background-color: #ffffff;
+            margin-left: 730px;
+            margin-top: -520px;
+
+}
+
+#contact_company
+{
+            width: 660px;
+            height: 160px;
+            background-color: #ffffff;
+            margin-left: 30px;
+            margin-top: 30px;
+}
+#advert_company
+{
+            width: 660px;
+            height: 165px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            margin-left: 730px;
+
+}
+/* end of kompanije prikaz */
+
+
+/*memi baner*/
+
+
+.header-row
+{
+    margin-top: 100px;
+    height:420px;
+    width:100%;
+    background-color: #D92528;
+/*    position: absolute;*/
+
+     -moz-transition: all 1s;
+   -o-transition: all 1s;
+   -webkit-transition: all 1s;
+   transition: all 1s;
+}
+
+.header-text
+{
+/*    background-color: #D92528;*/
+    width:50%;
+    float:left;
+/*    border:1px solid black;*/
+    margin-left:45px;
+    margin-top:20px;
+}
+
+.header-pic
+{
+    width:40%;
+    height:100%;
+    float:right;
+    overflow: hidden;
+
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+.header-pic img{
+    float: center;
+}
+
+.header-title
+{
+    color:white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+
+.header-title-small
+{
+    color:white;
+    font-size: 18px;
+    width:80%;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.button-oprojektu
+{
+    background-color: white;
+    border: none;
+    color: #D92528;
+    padding:5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:35px;
+    font-weight: 400;
+}
+
+.button-oprojektu:hover{
+    font-weight: 600;
+    padding-left: 19px;
+    padding-right: 19px;
+    text-decoration: none;
+    color: #D92528;
+}
+
+@media(max-width : 1050px )
+{
+    .header-pic
+    {
+        height:0;
+        width:0;
+    }
+
+    .header-text
+    {
+        width:55%;
+    }
+
+}
+
+@media(max-width : 900px )
+{
+    .header-text
+    {
+        width:90%;
+    }
+}
+
+
+@media(max-width : 600px )
+{
+    .header-pic
+    {
+        height:0;
+        width:0;
+    }
+
+    .header-text
+    {
+        margin-top:20px;
+    }
+
+    .header-title
+    {
+        font-size:35px;
+    }
+}
+
+@media(max-width : 450px )
+{
+    .header-title
+    {
+        font-size:27px;
+    }
+
+    .header-title-small
+    {
+        font-size: 17px;
+    }
+
+    .header-text
+    {
+        width:80%;
+        margin-left:25px;
+        margin-top:10px;
+    }
+
+    .header-row
+    {
+        height:500px;
+        margin-top:75px;
+    }
+
+    .navbar-brand > img
+    {
+        width:150px;
+    }
+
+    .navbar-toggle
+    {
+        padding: 10px 15px;
+        margin-top:20px;
+    }
+}
+
+@media(max-width : 350px )
+{
+    .header-title-small
+    {
+        font-size: 14px;
+        width:80%;
+    }
+
+    .header-text
+    {
+        width:80%;
+        margin-left:24px;
+        margin-top:10px;
+    }
+
+    .header-row
+    {
+        height:460px;
+        margin-top:75px;
+    }
+
+}
+
+/*end of memi baner*/
+
+/* cv-partner */
+
+.cv_partner{
+    width: 585px;
+    margin: auto;
+}
+
+.cv_partner ul li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 40%;
+}
+
+.cv_partner ul li:last-child{
+    margin-right: 0%;
+}
+
+.cv_partner ul li a
+{
+    text-decoration: none;
+    color: #D92528;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cv_partner ul li a:hover
+{
+    text-decoration: none;
+    color: #D92528;
+    font-weight: 800;
+}
+
+@media(max-width : 670px)
+{
+   .cv_partner ul li
+    {
+        margin-right: 18%;
+    }
+    .cv_partner
+    {
+        width: 450px;
+    }
+}
+
+@media(max-width : 480px)
+{
+    .cv_partner ul li
+    {
+        display: inline-block;
+        width:100%;
+        text-align:left;
+        margin-right:0;
+    }
+
+    .cv_partner
+    {
+        width: 340px;
+    }
+
+    .tekst-ikonice
+    {
+        width:170px;
+        display:inline;
+        margin-left:15px;
+    }
+
+    .ikonica-img
+    {
+        margin-bottom: 15px;
+        width:130px;
+    }
+}
+
+
+ @media(max-width : 350px)
+{
+    .ikonica-img
+    {
+        margin-bottom: 15px;
+        width:80px;
+    }
+
+    .tekst-ikonice
+    {
+        margin-left:5px;
+        font-size:12px;
+    }
+
+    .cv_partner
+    {
+        width: 260px;
+    }
+
+}
+
+/*???*/
+/*
+#first-link:hover img{
+    background-image: url('../img/cv-partner/cv2.png');
+    background-repeat: none;
+}
+
+#second-link:hover img{
+    background-image: url('../img/cv-partner/partner2.png');
+    background-repeat: none;
+}
+*/
+
+/* end of cv-partner */
+
+/*googlemaps*/
+  #map {
+    max-width: 1200px;
+    height: 400px;
+    bottom: 0;
+  }
+/*end of googlemaps*/
+
+/*prikaz jedne novosti*/
+
+.gallery-news
+{
+    width:100%;
+    height:100%;
+
+     -moz-transition: all 1s;
+   -o-transition: all 1s;
+   -webkit-transition: all 1s;
+   transition: all 1s;
+     cursor: pointer;
+    cursor: hand;
+}
+
+.otvori-galeriju
+{
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    vertical-align: middle;
+
+    padding:30px;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#d5d5d5;
+    opacity:0.5;
+    color:#c0392b;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 0.1;
+}
+.gallery-news:hover > .otvori-galeriju{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.otvori-galeriju-under-line
+{
+    height:5px;
+    width:55%;
+    background-color:white;
+}
+
+.slika-news-gallery
+{
+    width:100%;
+    height: 400px;
+}
+
+@media(max-width:900px)
+{
+    .otvori-galeriju
+    {
+        font-size:45px;
+    }
+
+    .otvori-galeriju-under-line
+    {
+        height:5px;
+        width:40%;
+    }
+}
+
+@media(max-width:600px)
+{
+    .otvori-galeriju
+    {
+        font-size:35px;
+    }
+
+    .otvori-galeriju-under-line
+    {
+        height:4px;
+        width:35%;
+    }
+}
+
+@media(max-width:300px)
+{
+    .otvori-galeriju
+    {
+        font-size:25px;
+    }
+
+    .otvori-galeriju-under-line
+    {
+        height:3px;
+        width:30%;
+    }
+}
+/*end of prikaz jedne novosti*/
+
+/*landing novosti*/
+
+.btn.btn-default
+{
+    margin-top: 70px;
+    margin-right: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    border: 1px solid #C91619;
+    color: #C91619;
+    border-style: solid;
+    width: 140px;
+    height: 40px;
+}
+
+.btn-box{
+    float: right;
+    height: 150px;
+    margin-top: 25px;
+}
+
+.row-news {
+    min-height: 200px;
+}
+
+.novosti{
+    width: 90%;
+    margin: auto;
+}
+
+.novost{
+    position: relative;
+}
+
+.border-novost{
+    width:102%;
+    margin-left:-1%;
+}
+
+.img-novost{
+    float: left;
+    width: 300px;
+    height: auto;
+    border:none;
+}
+
+.img-block{
+    margin-top: 25px;
+    float: left;
+    margin-left: 5px;
+    width: 300px;
+    height: 150px;
+    border:none;
+    overflow: hidden;
+}
+
+.novost-tekst{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    margin-left: 35px;
+    float: left;
+    width: 500px;
+    height: 150px;
+    color: #909191;
+/*    font-size: 130%;*/
+    font-size:20px;
+    font-weight: 300;
+}
+
+.novost-naslov{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+/*    font-size: 180%;*/
+    font-size:37px;
+    font-weight: 400;
+}
+
+.btn-default .btn{
+    color: white;
+}
+
+.btn-show-more{
+    background-color: #D92528;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-weight: 350;
+    font-size: 120%;
+}
+
+.disabled{
+    opacity: 0.2;
+}
+
+.btn-show-more:hover{
+    background-color: #E63538;
+    color: white;
+    box-shadow: 0px 0px 2px #D92528;
+}
+
+.btn-div{
+    margin: auto;
+    width: 150px;
+    margin-top: 30px;
+}
+
+@media(max-width:1200px)
+{
+    .img-novost
+    {
+        margin-top:40px;
+        width:200px;
+    }
+
+    .img-block
+    {
+        width:200px;
+        height:100px;
+    }
+
+    .novost-tekst
+    {
+        font-size:18px;
+    }
+
+    .novost-naslov
+    {
+        font-size:25px;
+    }
+
+   .btn.btn-default
+    {
+        font-size: 18px;
+        width:120px;
+    }
+}
+
+@media(max-width:980px)
+{
+   .btn-box
+    {
+        width:100%;
+        background-color:darkgray;
+        height:1px;
+        margin-top:80px;
+        margin-bottom: 20px;
+    }
+
+    .btn.btn-default
+    {
+        float:right;
+        margin-top:-80px;
+/*        margin-right:100px;*/
+    }
+
+    .border-novost
+    {
+        display: none;
+    }
+
+}
+
+@media(max-width:840px)
+{
+   .img-block
+    {
+        display: none;
+    }
+
+    .novost-tekst
+    {
+        width:85%;
+    }
+}
+
+
+@media(max-width:480px)
+{
+    .novost-tekst
+    {
+        font-size:14px;
+    }
+
+    .novost-naslov
+    {
+        font-size:20px;
+    }
+
+    .btn.btn-default
+    {
+        margin-top:-50px;
+        font-size: 16px;
+        width:100px;
+    }
+}
+
+
+/*end of landing novosti*/
+
+/*Prazan prostor*/
+.prazan-prostor
+{
+    width: 100%;
+}
+/*end of Prazan prostor*/
+
+
+/* spica novosti */
+
+.naslov {
+	color:white;
+	background-color:#C91619;
+	padding-left: 10%;
+	padding-right: 5%;
+	height: 300px;
+	padding-top: 2%;
+	display: block;
+}
+
+.tekst{
+	padding-top: 2%;
+}
+
+.tekst .col-3 {
+	padding-left: 10%;
+}
+
+.col-3 li{
+	padding-right: 5%;
+}
+
+.tekst .col-9 {
+	padding-right: 10%;
+}
+
+.slike{
+    width:80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.slike li{
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 17px;
+    padding-left: 17px;
+}
+
+.col-9 p {
+	font-family: 'Roboto', sans-serif;
+}
+
+#twitter, #youtube, #instagram, #facebook, #linkedin{
+    width:30px;
+    height: 30px;
+    float: right;
+    position: relative;
+    margin-left: 5px;
+    bottom: 20px;
+}
+
+#google{
+    width:30px;
+    height: 30px;
+    float: right;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10%;
+    bottom: 20px;
+}
+
+#ikonice{
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    width: 200px;
+}
+
+.news-img-top{
+    width: 100%;
+/*    height: 400px;*/
+    overflow: hidden;
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+     -moz-transition: all 1s;
+   -o-transition: all 1s;
+   -webkit-transition: all 1s;
+   transition: all 1s;
+}
+
+/*end of spica novosti*/
+
+/*GALLERY*/
+
+
+
+#gallery-pic img
+{
+    width:100%;
+/*    padding:2px;*/
+    -moz-transition: all 1s;
+   -o-transition: all 1s;
+   -webkit-transition: all 1s;
+   transition: all 1s;
+
+}
+
+.gallery-all
+{
+   width:100%;
+   height:100%;
+   font-family: 'Roboto', sans-serif;
+
+}
+
+.gallery-part
+{
+    float:left;
+    width:260px;
+    margin:10px;
+    position: relative;
+}
+
+.gallery-part:hover{
+  cursor:pointer;
+}
+
+.gallery-text
+{
+/*    text-align: center;*/
+    text-decoration: none;
+    color: #363738;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 20px;
+    word-break: break-all;
+    position:relative;
+}
+
+.overlay0,.overlay1,.overlay2,.overlay3,.overlay4,.overlay5,.overlay6
+{
+    opacity: 0;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    -moz-transition: all 1s;
+   -o-transition: all 1s;
+   -webkit-transition: all 1s;
+    transition: all 1s;
+
+}
+
+.gallery-text-line
+{
+    height:2px;
+    width:30%;
+    background-color: #363738;
+}
+
+@media(max-width:1200px)
+{
+  .gallery-part
+    {
+        width:21%;
+        margin:1%;
+    }
+
+    .overlay0,.overlay1,.overlay2,.overlay3,.overlay4,.overlay5,.overlay6
+    {
+       width:21%;
+    }
+}
+
+@media(max-width:760px)
+{
+    .gallery-part
+    {
+        width:46%;
+        margin:1%;
+    }
+
+    .overlay0,.overlay1,.overlay2,.overlay3,.overlay4,.overlay5,.overlay6
+    {
+       width:46%;
+    }
+}
+
+
+@media(max-width:480px)
+{
+    .gallery-part
+    {
+        width:98%;
+        margin:1%;
+    }
+
+    .overlay0,.overlay1,.overlay2,.overlay3,.overlay4,.overlay5,.overlay6
+    {
+       width:98%;
+    }
+}
+
+.cover-header{
+    height:280px;
+    background:url('../img/cover/ojobfairu.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    border-bottom: 2px solid #C91619;
+}
+
+.cover-header-oeestecu{
+    background:url('../img/cover/oeestecu.jpg') no-repeat center center fixed;
+}
+
+.cover-header-galerije{
+    background:url('../img/cover/galerije.jpg') no-repeat center center fixed;
+}
+
+.cover-header-novosti{
+    background:url('../img/cover/novosti.jpg') no-repeat center center fixed;
+}
+
+.cover-header-studenti{
+    background:url('../img/cover/studenti.jpg') no-repeat center center fixed;
+}
+
+.cover-header-kontakt{
+    background:url('../img/cover/kontakt.jpg') no-repeat center center fixed;
+}
+
+.cover-header-partneri{
+    background:url('../img/cover/partner.jpg') no-repeat center center fixed;
+}
+
+.cover-header-pokrovitelji{
+    background:url('../img/cover/press.jpg') no-repeat center center fixed;
+}
+
+.cover-header-profili{
+    background:url('../img/cover/profili.jpg') no-repeat center center fixed;
+}}
+
+/**/
+#svi_partneri{
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+.c_godisnji{
+    height: auto;
+    margin: auto;
+}
+.c_zlatni{
+    height: auto;
+    margin: auto;
+}
+.c_generalni{
+    height: auto;
+    margin: auto;
+}
+.partneri_box{
+    width: 900px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+#api-godisnji{
+    width:242px;
+}
+#micro-godisnji{
+    width:392px;
+    margin-top:10px;
+}
+#redbull-godisnji{
+    margin-top:5px;
+    width:252px;
+}
+#klix-godisnji{
+    width: 250px;
+    margin-left: 34%;
+}
+#szks-org{
+    margin-top: 60px;
+    width: 400px;
+    margin-left: 25%;
+}
+#shl-org{
+    width: 200px;
+    margin-left: 37%;
+    margin-top: 40px;
+}
+#fmon-org{
+    width: 300px;
+    margin-left: 30%;
+}
+#telekom-zlatni{
+    width: 240px;
+    margin-left: 34%;
+}
+#radioM-generalni{
+    width: 240px;
+    margin-left: 34%;
+    margin-top: 20px;
+}
+#api-srebreni{
+    width: 160px;
+}
+#devlogic-srebreni{
+    width: 200px;
+    margin-left: 20%;
+}
+#infobip-srebreni{
+    width: 200px;
+    margin-left: 9%;
+}
+#mistral-srebreni{
+    width: 180px;
+    margin-left: 22%;
+    margin-top: -20px;
+}
+#zira-srebreni{
+    width: 160px;
+    margin-left: 12%;
+}
+#akta-pokrovitelj{
+    width: 150px;
+    margin-left: 10%;
+}
+#iuventa-pokrovitelj{
+    width: 200px;
+    margin-left: 9%;
+}
+#kameleon-pokrovitelj{
+    width: 200px;
+    margin-left: 65%;
+    margin-top: -120px;
+}
+#novi-pokrovitelj{
+    width: 180px;
+    margin-left: 9%;
+}
+#student-pokrovitelj{
+    width: 200px;
+    margin-left: 7%;
+    margin-top: 0px;
+}
+#radio8-pokrovitelj{
+    width: 180px;
+    margin-left:66%;
+    margin-top: -89px;
+}
+/*ODAVDE DALJE*/
+#alfa-pokrovitelj{
+    width: 180px;
+    margin-left: 9%;
+    margin-top: -10;
+}
+#hocu-pokrovitelj{
+    width: 170px;
+    margin-left: 9%;
+    margin-top: 5px;
+}
+#efm-pokrovitelj{
+    width: 150px;
+    margin-left:69%;
+    margin-top: -135px;
+}
+#depo-pokrovitelj{
+    width: 120px;
+    margin-left: 12%;
+    margin-top: -25px;
+}
+#pogled-pokrovitelj{
+    width: 230px;
+    margin-left: 9%;
+    margin-top: -20px;
+}
+#bhindex-pokrovitelj{
+    width: 190px;
+    margin-left:67%;
+    margin-top: -120px;
+}
+#vogosca-pokrovitelj{
+    width: 170px;
+    margin-left: 10%;
+}
+#vijesti-pokrovitelj{
+    width: 200px;
+    margin-left: 8%;
+    margin-top: -30px;
+}
+#sens-pokrovitelj{
+    width: 110px;
+    margin-left:72%;
+    margin-top: -129px;
+}
+/*DOOOVDE*/
+
+#atlant-b{
+    width: 180px;
+    margin-left: 3%;
+    margin-top: 30px;
+}
+#cpe-b{
+    width: 170px;
+    margin-left: 5%;
+    margin-top: 25px;
+}
+#gene-b{
+    width: 170px;
+    margin-left: 4%;
+    margin-top: 30px;
+}
+#gramas-b{
+    width: 100px;
+    margin-left: 5%;
+}
+#ping-b{
+    width: 160px;
+    margin-left: 6%;
+}
+#qss-b{
+    width: 150px;
+    margin-left: 6%;
+}
+#rubicon-b{
+    width: 80px;
+    margin-top: -30px;
+    margin-left: 9%;
+}
+#tring-b{
+    width:140px;
+    margin-left: 8%;
+}
+#unicredit-b{
+    width: 180px;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+#reflected-b{
+    width: 190px;
+    margin-left: 7%;
+    margin-top: 35px;
+}
+#procredit-b{
+    width: 180px;
+    margin-left: 64%;
+    margin-top: -73px;
+}
+#klika-b{
+    width: 180px;
+    margin-left: 10%;
+}
+#infostudio-b{
+    width: 180px;
+    margin-left: 7%;
+}
+#deling-b{
+    width: 200px;
+    margin-left: 6%;
+}
+#studomat-p{
+    width: 140px;
+    margin-left: 6%;
+    margin-top: 20px;
+}
+#sutra-p{
+    width: 150px;
+    margin-left: 6%;
+    margin-top: 20px;
+}
+#haber-p{
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 6%;
+}
+#tuzlainfo-p{
+    width: 160px;
+    margin-top: 15px;
+    margin-left: 4%;
+}
+#bhmagazin-p{
+    width: 150px;
+    margin-left: 28%;
+    margin-top: 20px;
+}
+#doznajemo-p{
+    width: 150px;
+    margin-left: 6%;
+    margin-top: 20px;
+}
+
+#godisnji{
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #CE1F1F;
+    font-size: 30px;
+    text-align: center;
+}
+#zlatni{
+    margin-top: 0px;
+    font-family: "Roboto", sans-serif;
+    color:#CE1F1F;
+    text-align: center;
+    font-size: 27px;
+}
+#srebreni{
+    font-family: "Roboto", sans-serif;
+    color:#CE1F1F;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+#ucesnici{
+    font-family: "Roboto", sans-serif;
+    color:#CE1F1F;
+    text-align: center;
+    font-size: 21px;
+}
+
+#reklama{
+    width:960px;
+    margin:0 auto;
+    margin-top:25px;
+    overflow:hidden;
+}
+@media(max-width:960px)
+{
+    #reklama{
+        width: 0px;
+    }
+    #godisnji{
+        font-size: 26px;
+    }
+    #zlatni{
+        font-size: 22px;
+    }
+    #srebreni{
+        font-size: 19px;
+    }
+    #ucesnici{
+        font-size: 17px;
+    }
+    .partneri_box{
+        width: 720px;
+    }
+    #api-godisnji{
+        width:185px;
+    }
+    #micro-godisnji{
+        width:300px;
+    }
+    #redbull-godisnji{
+        width:205px;
+    }
+    #klix-godisnji{
+        width: 210px;
+        margin-left: 33%;
+    }
+#szks-org{
+    margin-top: 60px;
+    width: 300px;
+    margin-left: 25%;
+}
+#shl-org{
+    width: 150px;
+    margin-left: 37%;
+    margin-top: 40px;
+}
+#fmon-org{
+    width: 230px;
+    margin-left: 30%;
+}
+    #telekom-zlatni{
+        width: 200px;
+        margin-left: 33%;
+    }
+    #radioM-generalni{
+    width: 200px;
+    margin-left: 34%;
+    }
+    #devlogic-srebreni{
+        width: 160px;
+    }
+    #infobip-srebreni{
+        width: 160px;
+    }
+    #mistral-srebreni{
+        width: 140px;
+        margin-top: -30px;
+    }
+    #zira-srebreni{
+        width: 120px;
+    }
+    #akta-pokrovitelj{
+        width: 110px;
+    }
+    #iuventa-pokrovitelj{
+        width: 160px;
+        margin-top: 20px;
+    }
+    #kameleon-pokrovitelj{
+        width: 160px;
+        margin-top: -80px;
+    }
+    #novi-pokrovitelj{
+        width: 140px;
+    }
+    #student-pokrovitelj{
+        width: 160px;
+    }
+    #radio8-pokrovitelj{
+        width: 140px;
+    }
+    #alfa-pokrovitelj{
+        width: 135px;
+        margin-left: 10%;
+    }
+    #hocu-pokrovitelj{
+        width: 140px;
+        margin-left: 7%;
+    }
+    #efm-pokrovitelj{
+        width: 120px;
+        margin-left: 67%;
+    }
+    #depo-pokrovitelj{
+        width: 100px;
+    }
+    #pogled-pokrovitelj{
+        width: 160px;
+        margin-left: 8%;
+    }
+    #bhindex-pokrovitelj{
+        width: 140px;
+        margin-left: 10%;
+        margin-top: -5px;
+    }
+    #vogosca-pokrovitelj{
+        width: 120px;
+        margin-left: 10%;
+    }
+    #vijesti-pokrovitelj{
+        width: 130px;
+        margin-left: 10%;
+    }
+    #sens-pokrovitelj{
+        width: 90px;
+        margin-left: 15%;
+        margin-top: 0;
+    }
+    #atlant-b{
+        width: 120px;
+        margin-left: 5%;
+    }
+    #cpe-b{
+        width: 120px;
+    }
+    #gene-b{
+        width: 120px;
+        margin-left: 6%;
+    }
+    #gramas-b{
+        width: 70px;
+        margin-left: 7%;
+    }
+    #ping-b{
+        width: 120px;
+    }
+    #qss-b{
+        width: 100px;
+    }
+    #rubicon-b{
+        width: 60px;
+        margin-left: 10%;
+    }
+    #tring-b{
+        width:100px;
+        margin-left: 11%;
+    }
+    #unicredit-b{
+        width: 145px;
+        margin-left: 13%;
+    }
+    #reflected-b{
+        width: 140px;
+        margin-top: 40px;
+        margin-left: 4%;
+    }
+    #procredit-b{
+        width: 145px;
+        margin-top: -63px;
+        margin-left: 62%;
+    }
+    #klika-b{
+        width: 145px;
+        margin-left: 12%;
+    }
+    #infostudio-b{
+        width: 145px;
+        margin-left: 5%;
+    }
+    #deling-b{
+        width: 150px;
+        margin-left: 5%;
+    }
+
+    #studomat-p{
+        width: 110px;
+        margin-left: 6%;
+        margin-top: 20px;
+    }
+    #sutra-p{
+        width: 120px;
+        margin-left: 6%;
+        margin-top: 20px;
+    }
+    #haber-p{
+        width: 120px;
+        margin-top: 15px;
+        margin-left: 6%;
+    }
+    #tuzlainfo-p{
+        width: 130px;
+        margin-top: 15px;
+        margin-left: 4%;
+    }
+    #bhmagazin-p{
+        width: 120px;
+        margin-left: 28%;
+        margin-top: 20px;
+    }
+    #doznajemo-p{
+        width: 120px;
+        margin-left: 6%;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:763px)
+{
+    .c_ucesnici{
+        margin-top: -20px;
+    }
+    #godisnji{
+        font-size: 22px;
+    }
+    #zlatni{
+        font-size:19px;
+    }
+    #srebreni{
+        font-size:16px;
+    }
+    #ucesnici{
+        font-size: 14px;
+    }
+    .partneri_box{
+        width: 520px;
+        margin: auto;
+    }
+    #api-godisnji{
+        width:125px;
+    }
+    #micro-godisnji{
+        width:220px;
+        margin-left: 2%;
+    }
+    #redbull-godisnji{
+        width:130px;
+    }
+    #klix-godisnji{
+        width: 140px;
+        margin-left: 33%;
+    }
+#szks-org{
+    margin-top: 60px;
+    width: 220px;
+    margin-left: 25%;
+}
+#shl-org{
+    width: 100px;
+    margin-left: 37%;
+    margin-top: 40px;
+}
+#fmon-org{
+    width: 160px;
+    margin-left: 30%;
+}
+    #telekom-zlatni{
+        width: 140px;
+        margin-left: 32%;
+    }
+    #radioM-generalni{
+        width: 140px;
+        margin-left: 33%;
+    }
+    #api-srebreni{
+        width: 100px;
+    }
+    #devlogic-srebreni{
+        width: 130px;
+        margin-top: 20px;
+        margin-left: 16%;
+    }
+    #infobip-srebreni{
+        width: 120px;
+        margin-top: 20px;
+    }
+    #mistral-srebreni{
+        width: 110px;
+        margin-left: 19%;
+    }
+    #zira-srebreni{
+        width: 100px;
+    }
+    #akta-pokrovitelj{
+        width: 85px;
+        margin-left: 38%;
+        margin-top: 15px;
+    }
+    #iuventa-pokrovitelj{
+        width: 120px;
+        margin-top: 30px;
+        margin-left: 35%;
+    }
+    #kameleon-pokrovitelj{
+        width: 130px;
+        margin-top: 30px;
+        margin-left: 35%;
+    }
+    #novi-pokrovitelj{
+        width: 110px;
+        margin-left: 36%;
+        margin-top: -10px;
+    }
+    #student-pokrovitelj{
+        width: 120px;
+        margin-left: 35%;
+        margin-top: 35px;
+    }
+    #radio8-pokrovitelj{
+        width: 115px;
+        margin-left: 36%;
+        margin-top: 35px;
+    }
+    #alfa-pokrovitelj{
+        width: 100px;
+        margin-left: 38%;
+    }
+    #hocu-pokrovitelj{
+        width: 100px;
+        margin-left: 37%;
+        margin-top: 25px;
+    }
+    #efm-pokrovitelj{
+        width: 90px;
+        margin-left: 38%;
+        margin-top: 18px;
+    }
+    #depo-pokrovitelj{
+        width: 90px;
+        margin-left: 39%;
+        margin-top: -9px;
+    }
+    #pogled-pokrovitelj{
+        width: 110px;
+        margin-left: 37%;
+        margin-top: 25px;
+    }
+    #bhindex-pokrovitelj{
+        width: 110px;
+        margin-left: 38%;
+        margin-top: 10px;
+    }
+    #vogosca-pokrovitelj{
+        width: 80px;
+        margin-left: 41%;
+        margin-top: -15px;
+    }
+    #vijesti-pokrovitelj{
+        width: 100px;
+        margin-left: 39%;
+        margin-top: 15px;
+    }
+    #sens-pokrovitelj{
+        width: 0px;
+    }
+    #atlant-b{
+        width: 90px;
+        margin-left: 3%;
+    }
+    #cpe-b{
+        width: 90px;
+        margin-left: 4%;
+    }
+    #gene-b{
+        width: 90px;
+        margin-left: 5%;
+    }
+    #gramas-b{
+        width: 50px;
+        margin-left: 8%;
+    }
+    #ping-b{
+        width: 90px;
+        margin-left: 3%;
+    }
+    #qss-b{
+        width: 80px;
+        margin-left: 4%;
+    }
+    #rubicon-b{
+        width: 45px;
+    }
+    #tring-b{
+        width:80px;
+    }
+    #unicredit-b{
+        width: 110px;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    #reflected-b{
+        width: 105px;
+        margin-top: 10px;
+        margin-left: 4%;
+    }
+    #procredit-b{
+        width: 110px;
+        margin-left: 4%;
+        margin-top: 10px;
+    }
+    #klika-b{
+        width: 100px;
+        margin-left: 11%;
+    }
+    #infostudio-b{
+        width: 100px;
+        margin-left: 5%;
+    }
+    #deling-b{
+        width: 105px;
+        margin-left: 5%;
+    }
+    #studomat-p{
+        width: 80px;
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+    #sutra-p{
+        width: 90px;
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+    #haber-p{
+        width: 90px;
+        margin-top: 15px;
+        margin-left: 19%;
+    }
+    #tuzlainfo-p{
+        width: 100px;
+        margin-top: 15px;
+        margin-left: 19%;
+    }
+    #bhmagazin-p{
+        width: 90px;
+        margin-left: 19%;
+        margin-top: 0px;
+    }
+    #doznajemo-p{
+        width: 90px;
+        margin-left: 20%;
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:560px){
+    .c_pokrovitelji{
+        margin-top: -20px;
+    }
+
+    #godisnji{
+        font-size:19px;
+    }
+    #zlatni{
+        font-size:17px;
+    }
+    #srebreni{
+        font-size:14px;
+    }
+    #ucesnici{
+        font-size: 12px;
+    }
+    .partneri_box{
+        width: 360px;
+        margin: auto;
+    }
+    #api-godisnji{
+        width:100px;
+        margin-left: 30%;
+        margin-top: 15px;
+    }
+    #micro-godisnji{
+        width:150px;
+        margin-left: 22%;
+        margin-top: 20px;
+    }
+    #redbull-godisnji{
+        width:105px;
+        margin-left: 29%;
+        margin-top: 30px;
+    }
+    #klix-godisnji{
+        width:105px;
+        margin-left: 33%;
+        margin-top: 10px;
+    }
+#szks-org{
+    margin-top: 30px;
+    width: 150px;
+    margin-left: 25%;
+}
+#shl-org{
+    width: 90px;
+    margin-left: 33%;
+    margin-top: 40px;
+}
+#fmon-org{
+    width: 130px;
+    margin-left: 27%;
+}
+    #telekom-zlatni{
+        width: 100px;
+        margin-left: 31%;
+        margin-top: 30px;
+    }
+    #radioM-generalni{
+        width: 100px;
+        margin-left: 31%;
+    }
+    #api-srebreni{
+        width: 70px;
+    }
+    #devlogic-srebreni{
+        width: 100px;
+        margin-left: 11%;
+    }
+    #infobip-srebreni{
+        width: 90px;
+    }
+    #mistral-srebreni{
+        width: 80px;
+        margin-left: 16%;
+        margin-top: -10px;
+    }
+    #zira-srebreni{
+        width: 70px;
+    }
+    #akta-pokrovitelj{
+        width: 60px;
+        margin-left: 36%;
+    }
+    #iuventa-pokrovitelj{
+        width: 90px;
+        margin-left: 33%;
+        margin-top: 20px;
+    }
+    #kameleon-pokrovitelj{
+        width: 95px;
+        margin-left: 33%;
+        margin-top: 20px;
+    }
+    #novi-pokrovitelj{
+        width: 80px;
+        margin-left: 34%;
+        margin-top: -25px;
+    }
+    #student-pokrovitelj{
+        width: 90px;
+        margin-left: 33%;
+        margin-top: 10px;
+    }
+    #radio8-pokrovitelj{
+        width: 90px;
+        margin-left: 33%;
+        margin-top: 20px;
+    }
+    /*adžaaaaaaa*/
+    #alfa-pokrovitelj{
+        width: 90px;
+        margin-left: 33%;
+    }
+    #hocu-pokrovitelj{
+        width: 80px;
+        margin-left: 34%;
+    }
+    #efm-pokrovitelj{
+        width: 65px;
+        margin-left: 36%;
+    }
+    #depo-pokrovitelj{
+        width: 65px;
+        margin-left: 36%;
+    }
+    #pogled-pokrovitelj{
+        width: 85px;
+        margin-left: 33%;
+        margin-top: 10px;
+    }
+    #bhindex-pokrovitelj{
+        width: 82px;
+        margin-left: 34%;
+    }
+    #vogosca-pokrovitelj{
+        width: 65px;
+        margin-left: 36%;
+    }
+    #vijesti-pokrovitelj{
+        width: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 35%;
+    }
+    #sens-pokrovitelj{
+        width: 50px;
+        margin-left: 38%;
+    }
+    #atlant-b{
+        width: 70px;
+        margin-left: 1%;
+    }
+    #cpe-b{
+        width: 70px;
+        margin-left: 2%;
+    }
+    #gene-b{
+        width: 70px;
+        margin-left: 2%;
+    }
+    #gramas-b{
+        width: 40px;
+        margin-left: 3%;
+    }
+    #ping-b{
+        width: 70px;
+        margin-left: 2%;
+    }
+    #qss-b{
+        width: 60px;
+        margin-left: 1%;
+    }
+    #rubicon-b{
+        width: 35px;
+        margin-left: 10%;
+    }
+    #tring-b{
+        width:60px;
+        margin-left: 5%;
+    }
+    #unicredit-b{
+        width: 80px;
+        margin-left: 4%;
+    }
+    #reflected-b{
+        width: 85px;
+        margin-top: 10px;
+        margin-left: 4%;
+    }
+    #procredit-b{
+        width: 80px;
+        margin-top: -46px;
+        margin-left: 59%;
+    }
+    #klika-b{
+        width: 70px;
+        margin-left: 5%;
+        margin-top: -25px;
+    }
+    #infostudio-b{
+        width: 70px;
+        margin-left: 6%;
+        margin-top: -25px;
+    }
+    #deling-b{
+        width: 75px;
+        margin-left: 6%;
+        margin-top: -25px;
+    }
+    #studomat-{
+        width: 60px;
+        margin-left: 18%;
+        margin-top: 20px;
+    }
+    #sutra-p{
+        width: 70px;
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+    #haber-p{
+        width: 70px;
+        margin-top: 15px;
+        margin-left: 16%;
+    }
+    #tuzlainfo-p{
+        width: 80px;
+        margin-top: 15px;
+        margin-left: 18%;
+    }
+    #bhmagazin-p{
+        width: 70px;
+        margin-left: 16%;
+        margin-top: 0px;
+    }
+    #doznajemo-p{
+        width: 70px;
+        margin-left: 20%;
+        margin-top: 0px;
+    }
+}
+
+
+@media(max-width:400px){
+    #godisnji{
+        font-size:16px;
+    }
+    #zlatni{
+        font-size:14px;
+    }
+    #srebreni{
+        font-size:12px;
+    }
+    #ucesnici{
+        font-size: 10px;
+    }
+    .partneri_box{
+        width: 250px;
+        height: auto;
+        margin: auto;
+    }
+    #api-godisnji{
+        width:65px;
+        margin-left: 32%;
+    }
+    #micro-godisnji{
+        width:105px;
+        margin-left: 24%;
+    }
+    #redbull-godisnji{
+        width:75px;
+        margin-left: 30%;
+    }
+    #klix-godisnji{
+        width:75px;
+        margin-left:28%;
+    }
+    #szks-org{
+        margin-top: 20px;
+        width: 110px;
+        margin-left: 23%;
+    }
+    #shl-org{
+        width: 50px;
+        margin-left: 34%;
+        margin-top: 20px;
+    }
+    #fmon-org{
+        width: 80px;
+        margin-left: 27%;
+        margin-top: 10px;
+    }
+    #telekom-zlatni{
+        width: 69px;
+        margin-left: 30%;
+    }
+    #radioM-generalni{
+        width: 72px;
+        margin-left: 27%;
+        margin-top: 10px;
+    }
+    #api-srebreni{
+        width: 50px;
+    }
+    #devlogic-srebreni{
+        width: 70px;
+        margin-left: 10%;
+    }
+    #infobip-srebreni{
+        width: 70px;
+    }
+    #mistral-srebreni{
+        width: 60px;
+        margin-left: 12%;
+    }
+    #zira-srebreni{
+        width: 50px;
+        margin-left: 15%;
+    }
+    #akta-pokrovitelj{
+        width: 40px;
+        margin-left: 34%;
+    }
+    #iuventa-pokrovitelj{
+        width: 70px;
+        margin-left: 30%;
+        margin-top: 20px;
+    }
+    #kameleon-pokrovitelj{
+        width: 70px;
+        margin-left: 30%;
+        margin-top: 20px;
+    }
+    #novi-pokrovitelj{
+        width: 60px;
+        margin-left: 32%;
+        margin-top: -25px;
+    }
+    #student-pokrovitelj{
+        width: 70px;
+        margin-left: 30%;
+        margin-top: 10px;
+    }
+    #radio8-pokrovitelj{
+        width: 70px;
+        margin-left: 30%;
+        margin-top: 20px;
+    }
+    #alfa-pokrovitelj{
+        width: 70px;
+        margin-left: 31%;
+    }
+    #hocu-pokrovitelj{
+        width: 65px;
+        margin-left: 31%;
+    }
+    #efm-pokrovitelj{
+        width: 55px;
+        margin-left: 34%;
+    }
+    #depo-pokrovitelj{
+        width: 60px;
+        margin-left: 34%;
+    }
+    #pogled-pokrovitelj{
+        width: 80px;
+        margin-left: 30%;
+    }
+    #bhindex-pokrovitelj{
+        width: 80px;
+        margin-left: 31%;
+    }
+    #vogosca-pokrovitelj{
+        width: 60px;
+        margin-left: 35%;
+    }
+    #vijesti-pokrovitelj{
+        width: 80px;
+        margin-left: 31%;
+    }
+
+    #atlant-b{
+        width: 50px;
+        margin-left: 20%;
+    }
+    #cpe-b{
+        width: 50px;
+        margin-left: 8%;
+    }
+    #gene-b{
+        width: 50px;
+        margin-left: 21%;
+    }
+    #gramas-b{
+        width: 30px;
+        margin-top: 20px;
+        margin-left: 12%;
+    }
+    #ping-b{
+        width: 50px;
+        margin-left: 24%;
+    }
+    #qss-b{
+        width: 40px;
+        margin-left: 7%;
+    }
+    #rubicon-b{
+        width: 25px;
+        margin-left: 27%;
+        margin-top: 20px;
+    }
+    #tring-b{
+        width:40px;
+        margin-left: 14%;
+        margin-top: 19px;
+    }
+    #unicredit-b{
+        width: 60px;
+        margin-left: 32%;
+        margin-top: -10px;
+    }
+    #reflected-b{
+        width: 55px;
+        margin-left: 31%;
+    }
+    #procredit-b{
+        width: 60px;
+        margin-left: 32%;
+        margin-top: 20px;
+    }
+    #klika-b{
+        width: 40px;
+        margin-left: 36%;
+    }
+    #infostudio-b{
+        width: 40px;
+        margin-left: 35%;
+        margin-top: 8px;
+    }
+    #deling-b{
+        width: 45px;
+        margin-left: 34%;
+        margin-top: 14px;
+    }
+    #studomat-p{
+        width: 50px;
+        margin-left: 13%;
+        margin-top: 20px;
+    }
+    #sutra-p{
+        width: 60px;
+        margin-left: 18%;
+        margin-top: 20px;
+    }
+    #haber-p{
+        width: 60px;
+        margin-top: 15px;
+        margin-left: 11%;
+    }
+    #tuzlainfo-p{
+        width: 70px;
+        margin-top: 15px;
+        margin-left: 16%;
+    }
+    #bhmagazin-p{
+        width: 60px;
+        margin-left: 11%;
+        margin-top: 0px;
+    }
+    #doznajemo-p{
+        width: 60px;
+        margin-left: 18%;
+        margin-top: 0px;
+    }
+}
+        #korisnici{
+            font-family: "Roboto", sans-serif;
+            color:#CE1F1F;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #partneri{
+            font-family: "Roboto", sans-serif;
+            color:#CE1F1F;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #lista{
+            list-style-type:none;
+        }
+
+        .zaglavlje{
+            background-color: #CE1F1F;
+            height: 10%;
+        }
+
+        .slika_godisnji{
+            float: left;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+
+        .slika_godisnji img{
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            top: auto;
+        }
+
+        .slika_zlatni{
+            float: left;
+            height: 160px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+        .slika_zlatni img{
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            top: auto;
+        }
+
+        .slika_srebreni{
+            float: left;
+            width:200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+        }
+        .slika_srebreni img{
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            top: auto;
+        }
+
+        .slika_ucesnici{
+            float: left;
+            width: 170px;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            top: auto;
+        }
+        .slika_ucesnici img{
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            top: auto;
+        }
+
+        .slika_korisnici_baze{
+            float:left;
+            width:18%;
+            height: 9%;
+            margin:2% 3% 2% 0;
+
+        }
+        .slika_korisnici_baze img{
+            max-width: 100%;
+            max-height: 100%;
+            width: 80%;
+            margin: auto;
+        }
+
+        .slika_partneri{
+            width:180px;
+            margin-left: 470px;
+        }
+        .slika_partneri img{
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        ul, menu, dir {
+            -webkit-padding-start:0px;
+            -webkit-margin-before: 0px;
+            -webkit-margin-after: 0px;
+        }
+
+        ul li{
+            display: inline;}
+/**/
+
+.cover-header .text{
+    position:absolute;
+    top:50%;
+    margin-top:-35px;
+    height:70px;
+    line-height: 70px;
+    padding-left:40px;
+    padding-right:40px;
+    background:#363738;
+    left:0;
+}
+
+.timeline-nav{
+    width:50%;
+    height:50px;
+    display: block;
+    float: left;
+    background:#C91619;
+    text-align: center;
+}
+
+.timeline-nav:hover{
+    background: #9B1B1D;
+}
+
+.timeline{
+    width:100%;
+    background: #fff;
+    height:360px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.timeline .line{
+    width:6000px;
+    background: #c91619;
+    position: absolute;
+    top:139px;
+    height:1px;
+}
+
+.timeline .holder{
+    width:6000px;
+}
+
+.timeline .lineitem{
+    width:220px;
+    position: relative;
+    height:258px;
+    float: left;
+}
+
+.timeline .lineitem .line-top{
+    position:absolute;
+    display: none;
+    width:2px;
+    height:120px;
+    left:50%;
+    margin-left: -1px;
+    background: #c91619;
+}
+
+.timeline .lineitem .krug{
+    position: absolute;
+    top:120px;
+    border-radius: 90px;
+    width:40px;
+    height: 40px;
+    left:50%;
+    margin-left:-20px;
+    background: #c91619;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color:#fff;
+}
+
+.timeline .lineitem .event{
+    position: absolute;
+    top:170px;
+    width:100%;
+    text-align: center;
+}
+
+.r .line-top{background:#1A9384!important;}
+.r .krug{background:#1A9384!important;}
+
+.s .line-top{background:#fdc54e!important;}
+.s .krug{background:#fdc54e!important;}
+
+.e .line-top{background:#6d6e71!important;}
+.e .krug{background:#6d6e71!important;}
+
+
+.cv-partner-item{
+    display: block;
+    height:280px;
+    overflow: hidden;
+    width:50%;
+    position: relative;
+    float:left;
+}
+
+.cv-partner-item .shadow-cover{
+    position: absolute;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background: #c91619;
+    z-index: 10;
+}
+
+.cv-partner-item:hover > .shadow-cover{
+    opacity: 0.7;
+}
+
+.vrhovni-sloj{
+    position: absolute;
+    z-index: 15;
+    color:#fff !important;
+    text-align: center;
+    top:40px; right:0; left:0; bottom: 0;
+    font-size: 26px;
+}
+
+/*end of GALLERY*/
+
+
+
+
+/*PROFIL KOMPANIJE*/
+
+.slika-kompanije{
+    width: 200px;
+    height: auto;
+    margin-left: 16%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.profil-podaci{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.profil-podaci label{
+    width: 960px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.naziv-kompanije-labela, .naziv-kompanije, .djelatnost-kompanije-labela, .djelatnost-kompanije, .mail-kompanije-labela, .mail-kompanije, .web-kompanije-labela, .web-kompanije, .adresa-kompanije-labela, .adresa-kompanije, .telefon-kompanije-labela, .telefon-kompanije{
+    width: 500px;
+}
+
+.naziv-kompanije, .djelatnost-kompanije, .mail-kompanije, .web-kompanije, .adresa-kompanije, .telefon-kompanije, .brzaposlenih-kompanije, .trziste-kompanije, .novozaposlenih-kompanije, .novozaposlenih-sajam-kompanije, .obrazovniprofil-kompanije, .godinestudija-kompanije, .skillovi-kompanije, .jezici-kompanije, .iskustvo-kompanije, .obrazovniprofilnovog-kompanije, .godinestudijanovog-kompanije, .skillovinovog-kompanije, .jezicinovog-kompanije, .iskustvonovog-kompanije{
+    font-weight: 600;
+    color: #D92528;
+
+}
+
+.profil-podaci p{
+    text-align: center;
+}
+.kompanije-kontakt{
+    margin-left: 420px;
+    margin-top: -250px;
+}
+.naziv-kompanije{
+    font-size: 40px;
+}
+
+
+/* menufix */
+
+div ul li{
+    margin-left: -5px;
+    font-size: 14px;
+}

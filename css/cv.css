@@ -1,0 +1,39 @@
+.red-up{
+	text-transform: uppercase;
+	color:#C0392B;
+	font-size: 14px;
+}
+.highlite{
+	color:#9d9d9d;
+	margin-bottom: 2px;
+}
+.svetlo{
+	color:#5d5d5d;
+}
+.big-heading{
+	font-size: 20px;
+}
+
+.normal-trasnform{
+	text-transform: none;
+}
+
+.red-tabela{
+	width:670px;
+}
+
+.bio-col-left{
+	width:250px!important;
+	color:#9d9d9d;
+	font-weight: bold;
+	vertical-align: text-top;
+	font-size: 14px;
+}
+
+.bio-col-right{
+	width:420px!important;
+	color:#2d2d2d;
+	vertical-align: text-bottom;
+	font-size: 14px;
+	line-height: 18px;
+}

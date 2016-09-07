@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /
+
+#RewriteCond %{HTTP_HOST} !^www [NC]
+#RewriteRule (.*) http://www.%{HTTP_HOST}/$1 [L,R]
+
+# allow social media crawlers to work by redirecting them to a server-rendered static version on the page
+RewriteRule ^novost/([^/]*)$ /novost.php?id=$1 [L]
+
+RewriteRule ^ojobfairu$ /oprojektu.php [L]
+RewriteRule ^oeestecu$ /oeestecu.php [L]
+RewriteRule ^ucesnici$ /ucesnici.php [L]
+RewriteRule ^mediji$ /mediji.php [L]
+RewriteRule ^suorganizatori$ /suorganizatori.php [L]
+RewriteRule ^novosti$ /novosti.php [L]
+RewriteRule ^galerije$ /galerija.php [L]
+RewriteRule ^login$ /login.php [L]
+RewriteRule ^kontakt$ /kontakt.php [L]

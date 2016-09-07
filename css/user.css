@@ -1,0 +1,170 @@
+.cv-scroller{
+  width:4260px;
+}
+
+.cv-inputs h1{
+  font-size: 16px!important;
+  color:#5d5d5d;
+}
+
+.cv-inputs .form-input{
+  width:650px;
+  padding:10px;
+  border-radius:5px;
+  border:1px solid #d5d5d5;
+  outline: none;
+  color:#292929;
+  resize:none;
+}
+
+.dodaj-iskustvo{
+  border:1px solid #d5d5d5;
+  text-align: center;
+  color:#fff!important;
+  font-weight: bold;
+  background:#C0392B;
+  border-radius: 5px;
+  width:650px;
+  padding:10px;
+  line-height: 26px;
+  height: 26px;
+  display: block;
+  text-decoration: none;
+}
+
+.dodaj-iskustvo:hover{
+  cursor:pointer;
+  background: #AA3428;
+}
+
+.novost{
+  width:670px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.novost .img-holder{
+  width:300px;
+  margin-right:10px;
+  float:left;
+}
+
+.novost .info{
+  width:360px;
+  float:left;
+}
+
+.novost .info h1{
+  font-size:18px;
+  color:#5d5d5d;
+}
+
+.novost .info span{
+  font-size: 14px;
+  color:#5d5d5d;
+  line-height: 18px;
+}
+
+.azuriraj{
+  display: block;
+  padding:20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-img-holder{
+  display: block;
+  width:120px;
+  height:120px;
+  overflow: hidden;
+  border-radius:90px;
+  -moz-border-radius:90px;
+  -webkit-border-radius:90px;
+}
+
+.dropdown-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+.dropdown-select {
+   width: 240px;
+   float:left;
+   margin-right:10px;
+   height: 34px;
+   overflow: hidden;
+   background: url(../icons/down.png) no-repeat right #fff;
+   background-position: 92% 50%;
+   border: 1px solid #d5d5d5;
+   border-radius:5px;
+   }
+
+.login{
+  width:380px;
+  border-radius:5px;
+  height:320px;
+  margin:0 auto;
+  margin-top:50px;
+  font-size: 16px;
+  color:#5d5d5d;
+  background:#fbfbfb;
+}
+
+#login-bg{
+  background:#fbfbfb;
+  margin-left:0px;
+}
+
+#login-bg .error-msg{
+  margin:0 auto;
+  padding:10px;
+  width:380px;
+  background:#CF918B;
+  border-radius:5px;
+  margin-top:20px;
+  color:#fbfbfb;
+}
+
+.in{
+  padding:10px;
+  width:360px;
+  margin:0 auto;
+  outline:0!important;
+  border:1px solid #d5d5d5;
+}
+
+.login-btn{
+  padding:10px;
+	color:#fff!important;
+	background: #C0392B;
+	font-weight: bold;
+	font-size: 14px;
+	border: 0;
+	border-radius:5px;
+	text-decoration: none;
+  float:right;
+  margin-left:10px;
+}
+
+.login-btn:hover{
+	cursor: pointer;
+	background: #AA3428;
+}
+
+#login-bg a{
+  text-decoration: none;
+  color:#C0392B;
+}
+
+#login-bg a:hover{
+  cursor:pointer;
+  opacity: 0.7;
+}

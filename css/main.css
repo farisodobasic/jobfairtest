@@ -1,0 +1,154 @@
+/* Main css file */
+body
+{
+	background-color :#FFFFFF!important;
+}
+#dash{
+	background-color: #D9D9D9;
+	width: 1024px;
+	height: 596px;
+	margin: auto;
+	border-radius: 5px;
+    box-shadow: 0px 0px 42px 10px #D1D9D9;
+    display: block;
+}
+
+#subdash-kockice{
+	position: relative;
+	overflow: auto;
+	margin-left: 2%;
+	display: block;
+}
+
+.step-h1{
+	height: 20%;
+}
+
+.step-h2{
+	height: 5%;
+}
+
+#subdash-red{
+	float: left;
+	margin-left: 65%;
+	background-color: #FF3232;
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	border-radius: 2%;
+}
+
+#istaknuta-kockica{
+	width: 90%;
+	height: 78%;
+	margin: auto;
+	margin-top: 7%;
+	margin-bottom: 5%;
+	background-color: #D9D9D9;
+	border-radius: 4%;
+	overflow: auto;
+}
+
+#cv-dash-naslov-okvir{
+	margin: auto;
+	height: 11%;
+	width: 100%;
+	margin-top: 20px;
+	text-decoration: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 180%;
+	font-weight: bolder;
+	text-align: center;
+	overflow: auto;
+}
+
+.dash-kockice{
+	width: 30%;
+	height: 25%;
+	overflow: auto;
+	display: inline-block;
+}
+
+.dash-subkockice{
+	width: 40%;
+	height: 50%;
+	float: left;
+}
+
+#crvena{
+	background-color: #FF3232;
+	border-radius: 2%;
+}
+
+#zuta{
+	background-color: #FFDC32;
+	border-radius: 2%;
+}
+
+#plava{
+	background-color: #5033AF;
+	border-radius: 2%;
+}
+
+#zelena{
+	background-color: #28CC28;
+	border-radius: 2%;
+}
+
+.strelica{
+	margin: auto;
+	padding-top: 10%;
+}
+
+span.glyphicon {
+    font-size: 48px;
+}
+
+span{
+	padding-left: 25%;
+}
+
+.dash-podaci{
+	margin-top: 10%;
+	font-size: 400%;
+	width: 50%;
+	text-align: center;
+	margin-left: 6%;
+	font-weight: bolder;
+	font-family: "Open-Sans";
+}
+
+.dash-labele{
+	width: 100%;
+	font-size: 120%;
+	text-align: right;
+	padding-right: 5%;
+	font-weight: bolder;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.dash-cv-podaci{
+	width: 100%;
+	height: 12.5%;
+	border-bottom-style: solid;
+	border-width: 0.1px;
+	border-color: #646566;
+}
+
+.dash-cv-box{
+	width: 30%;
+	padding-top: 1.5%;
+	padding-bottom: 2%;
+}
+
+
+.dash-cv-label{
+	float:left;
+	display: block;
+	text-align:center;
+	width:65%;
+}
+
+.dash-cv-label strong{
+	font-size: 140%;
+}
